@@ -14,7 +14,7 @@ int main() {
     Lista lista_geral = criar_lista();
     char nome_arquivo[50];
 
-    printf("Carregando e concatenando base de dados dos TREs...\n");
+    printf("carregando e concatenando as base de dados \n");
 
     for (int i = 0; i < 27; i++) {
         sprintf(nome_arquivo, "teste_TRE-%s.csv", estados[i]);
@@ -26,7 +26,7 @@ int main() {
         gerar_resumo_tribunais(lista_geral);
         
         char municipio_alvo[100];
-        printf("\n[Item 3] Informe o municipio para gerar o relatorio CSV: ");
+        printf("\n[Item 3] informe o municipio para gerar o relatorio CSV: ");
         
         scanf(" %99[^\n]", municipio_alvo);
 

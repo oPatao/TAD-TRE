@@ -123,9 +123,9 @@ void gerar_resumo_tribunais(Lista l) {
         "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO"
     };
 
-    FILE *f = fopen("resumo_tribunais.csv", "w");
+    FILE *f = fopen("resumoTribunais.csv", "w");
     if (!f) {
-        printf("Erro ao criar o arquivo de resumo.\n");
+        printf("erro ao criar o arquivo de resumo.\n");
         return;
     }
 
@@ -181,7 +181,7 @@ void gerar_resumo_tribunais(Lista l) {
     }
 
     fclose(f);
-    printf("\n[Item 2] Arquivo 'resumo_tribunais.csv' gerado com sucesso!\n");
+    printf("\n[Item 2] o aquivo 'resumo_tribunais.csv' gerado com sucesso!\n");
 }
 
 void gerar_csv_municipio(Lista l, char *municipio) {
@@ -212,5 +212,5 @@ void gerar_csv_municipio(Lista l, char *municipio) {
         atual = atual->prox;
     }
     fclose(f);
-    printf("Arquivo %s gerado com sucesso! (%d registros encontrados)\n", nome_saida, encontrou);
+    printf("arquivo %s gerado com sucesso, (%d registros encontrados)\n", nome_saida, encontrou);
 }
